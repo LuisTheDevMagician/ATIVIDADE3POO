@@ -21,6 +21,7 @@ public class Main {
            System.out.println("5 - Vender Ingresso");
            System.out.println("6 - Listar Filmes");
            System.out.println("7 - Listar Ingressos");
+           System.out.println("8 - Sair do Sistema");
            System.out.println("================================");
 
            String op = sc.nextLine();
@@ -200,6 +201,15 @@ public class Main {
                            System.out.println("Assento: " + ingresso.getLocalizacao());
                            System.out.println("_______________________________________________________");
                        }
+                       break;
+
+                   case "8":
+                       System.out.println("Você saiu do Sistema");
+                       i = 0;
+                       break;
+
+                   default:
+                       System.out.println("Escolha uma opção válida");
                        break;
            }
 
